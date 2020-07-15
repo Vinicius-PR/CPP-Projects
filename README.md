@@ -1,2 +1,2 @@
 # CPP-Projects
-Simples programs in C++
+Simple programs in C++
