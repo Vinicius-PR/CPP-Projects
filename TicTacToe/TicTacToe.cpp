@@ -127,8 +127,8 @@ int main() {
     
         while (true) {
             //Player 1 turn:
-            if (random_num % 2 != 0) {
-                random_num++;
+            if (random_num == 1) {
+                random_num = 2;
                 Display_board(game_board, availables);
                 std::cout << "Player 1 (X), type your position: ";
                 Get_input(game_board, availables, 'X');
@@ -146,8 +146,8 @@ int main() {
             }
             
             //Player 2 turn:
-            else if(random_num % 2 == 0) {
-                random_num++;
+            else if(random_num == 2) {
+                random_num = 1;
                 Display_board(game_board, availables);
                 std::cout << "Player 2 (O), type your position: ";
                 Get_input(game_board, availables, 'O');
